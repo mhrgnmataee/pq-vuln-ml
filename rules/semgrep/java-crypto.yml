@@ -1,0 +1,11 @@
+rules:
+  - id: java-keypairgenerator
+    languages: [java]
+    severity: INFO
+    message: KeyPairGenerator usage (check algorithm, likely quantum-vulnerable)
+    pattern: KeyPairGenerator.getInstance($ALG, ...)
+  - id: java-cipher
+    languages: [java]
+    severity: INFO
+    message: Cipher usage (check algorithm and key size)
+    pattern: Cipher.getInstance($ALG, ...)

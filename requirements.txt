@@ -1,0 +1,35 @@
+# هسته
+pandas
+numpy
+scikit-learn
+xgboost
+shap
+scipy
+statsmodels
+
+# تحلیل کد
+tree-sitter
+tree-sitter-python
+tree-sitter-java
+semgrep
+
+# مدل‌های زبانی کد
+torch
+transformers
+datasets
+
+# جمع‌آوری داده
+requests
+PyGithub
+python-dotenv
+tqdm
+pyyaml
+
+# ردیابی آزمایش‌ها و نمودار
+mlflow
+matplotlib
+seaborn
+
+# ابزار توسعه
+pytest
+jupyter
