@@ -1,0 +1,15 @@
+rules:
+  - id: py-rsa-keygen
+    languages: [python]
+    severity: INFO
+    message: RSA key generation (quantum-vulnerable)
+    pattern-either:
+      - pattern: rsa.generate_private_key(...)
+      - pattern: RSA.generate(...)
+  - id: py-ec-keygen
+    languages: [python]
+    severity: INFO
+    message: Elliptic-curve key generation (quantum-vulnerable)
+    pattern-either:
+      - pattern: ec.generate_private_key(...)
+      - pattern: ECC.generate(...)
