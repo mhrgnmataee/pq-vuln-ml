@@ -1,0 +1,22 @@
+seed: 42
+
+split:
+  train: 0.70
+  val: 0.15
+  test: 0.15
+  level: repo        # تقسیم فقط در سطح مخزن
+
+github:
+  languages: [Python, Java]
+  min_stars: 20
+  active_since_years: 2
+  target_repos: 400
+  allowed_licenses: [mit, apache-2.0, bsd-2-clause, bsd-3-clause, mpl-2.0, isc, unlicense]
+
+discovery:
+  context_lines: 10  # تعداد خطوط اطراف هر مورد
+
+labeling:
+  sample_size: 2000
+  pilot_size: 100
+  min_kappa: 0.7
